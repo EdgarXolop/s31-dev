@@ -13,7 +13,11 @@
                                     <i class="fa fa-close"></i>
                                     &nbsp;&nbsp;| 
                                 </span>
-                                &nbsp;&nbsp;{{s.name}}                                
+                                &nbsp;&nbsp;{{s.name}}  
+                                &nbsp;&nbsp;                              
+                                <button class="button is-rounded is-small cart" @click="buyback($index)"> 
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>                     
                             </a>
                         </li>
                     </ul>
@@ -61,8 +65,10 @@ export default {
         font-size: 18px
     }
     
-    .menu-list li a .icon{
+    .menu-list li a .icon,.menu-list li a .cart{
         color: #101010;
+        background: transparent;
+        border: 0px
     }
 
     .menu-list li a:hover {
@@ -72,5 +78,10 @@ export default {
 
     .menu-list li a:hover .icon{
         color: #373737;
+    }
+    .menu-list li a:hover .cart{
+        background: #77b2ae;
+        color: #000000;
+        float: right;
     }
 </style>
