@@ -15,4 +15,4 @@ npm run dev
 npm run build
 ```
 
-[LIVE(http://s31-dev.s3-website-us-east-1.amazonaws.com).
+[LIVE](http://s31-dev.s3-website-us-east-1.amazonaws.com).
