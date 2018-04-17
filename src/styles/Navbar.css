@@ -1,0 +1,20 @@
+.field{
+  width: 100% !important
+}
+.navbar-s31{
+  background: linear-gradient(to right, #df3f28, #89a9bb)
+}
+input[type="text"] {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+}
+.icon{
+  color: #ffffff
+}
+
+.is-transparent{
+  background: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+}

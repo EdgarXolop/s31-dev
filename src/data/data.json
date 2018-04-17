@@ -1,0 +1,150 @@
+{
+    "available":[
+        {
+        "name": "fishcake.com",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "fishcake.net",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "fishcake.org",
+        "price": "12.00",
+        "currency": "$",
+        "available": false
+        },
+        {
+        "name": "fishcake.co",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "fishcake.io",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "fishcake.com.co",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "fishcake.ca/ke",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "foobar.com",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "foobar.net",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "foobar.org",
+        "price": "12.00",
+        "currency": "$",
+        "available": false
+        },
+        {
+        "name": "foobar.co",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "foobar.io",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "foobar.com.co",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "foobar.ca/ke",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        }
+    ],
+    "saved": [
+        {
+        "name": "cake.com",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "bigcake.org",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "chocolatecake.co",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "fishcakes4ever.io",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "fishcake.com.co",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "fish.ca/ke",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "fi.sh/cake",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "fish/cake",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "f.is/hcake",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        },
+        {
+        "name": "fi/shcake",
+        "price": "12.00",
+        "currency": "$",
+        "available": true
+        }
+    ]
+}
