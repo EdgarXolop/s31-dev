@@ -12,13 +12,13 @@
     color: #14312e;
 }
 .domain-dot{
-    color: #1eb399;
+    color: #1eb399 !important;
 }
 .domain:hover .domain-dot i{
     color: #07766a;
 }
 .unavailable{
-  color: #d43832;
+  color: #d43832 !important;
 }
 .disabled{
   color: #937d7d;

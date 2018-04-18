@@ -1,53 +1,31 @@
-import React, {Component} from 'react'
+import React, {PureComponent} from 'react'
 import PropTypes from"prop-types";
-import savedcss from "../styles/Saved.css";
 
-class Saved extends Component {
-    state = {
-        titleList : "Saved",
-        saved : this.props.saved
-    }
+class Saved extends PureComponent {
     
     render(){
         return (
-            <div className="column is-12 saved">
-                <div className="column is-5">
-                    <h2 className="subtitle subtitle-saved">{this.state.titleList}</h2>
-                    <div className="line"></div>
-                </div>
-                <div className="column is-12 ">
-                    <aside className="menu">
-                        <ul className="menu-list">
-                            {
-                                this.state.saved.map((s)=>{
-                                    return (
-                                        <li key={s.name}>
-                                            <a>
-                                                <span className="icon is-small" click="buyback($index)"> 
-                                                    <i className="fa fa-close"></i>
-                                                    &nbsp;&nbsp;| 
-                                                </span>
-                                                &nbsp;&nbsp;{s.name}
-                                                &nbsp;&nbsp;                              
-                                                <button className="button is-rounded is-small cart"> 
-                                                    <i className="fa fa-shopping-cart"></i>
-                                                </button>                     
-                                            </a>
-                                        </li>
-                                    )
-                                })
-                            }
-                        </ul>
-                    </aside>
-                </div>
-                <style scoped src={savedcss}></style>
-            </div>
+            <li >
+                <a>
+                    <button className="icon is-small" onClick={()=>{this.props.buyback(this.props.index)}}> 
+                        <i className="fa fa-close"></i>
+                        &nbsp;&nbsp;| 
+                    </button>
+                    &nbsp;&nbsp;{this.props.domain.name}
+                    &nbsp;&nbsp;                              
+                    <button className="button is-rounded is-small cart"> 
+                        <i className="fa fa-shopping-cart"></i>
+                    </button>                     
+                </a>
+            </li>
         )
     }
 }
 
 Saved.propTypes = {
-    saved: PropTypes.array.isRequired
+    domain: PropTypes.object.isRequired,
+    index: PropTypes.number.isRequired,
+    buyback: PropTypes.func.isRequired
 }
 
 export default Saved;

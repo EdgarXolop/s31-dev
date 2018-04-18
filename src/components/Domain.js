@@ -39,7 +39,9 @@ class Domain extends Component {
                     {this.state.domain.currency} {this.state.domain.price}
                 </div>
                 <div className="column is-1">
-                    <button className="button is-rounded btn-buy" disabled={!this.state.domain.available} click="buy(index)">
+                    <button className="button is-rounded btn-buy" disabled={!this.state.domain.available} onClick={()=>{
+                        this.props.buy(this.props.index)
+                    }}>
                         Buy now &nbsp;&nbsp;
                         <i className="fa fa-angle-right"></i>
                     </button>
