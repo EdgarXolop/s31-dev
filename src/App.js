@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Navbar from './components/Navbar'
 import Saved from './components/Saved'
 import Domain from'./components/Domain'
 import {available,saved} from './data/data.json'
@@ -45,45 +46,9 @@ class App extends Component {
   render() {
     return (
       <div className="container is-paddingless">
-        <div name="navbar">
-          <nav className="navbar is-dark navbar-s31">
-            <div className="navbar-brand">
-              <a className="navbar-item">          
-                <img src={this.state.logo} width="28" height="50" alt="logo-s31"/>          
-              </a>
-            </div>
-            <div className="navbar-item is-expanded">
-              <div className="field">
-                  <div className="control has-icons-left ">
-                    <input className="input is-medium" type="text" placeholder="Search" value={this.state.searchText} onChange={(event)=>{this.setState({searchText: event.target.value})}} />
-                    <span className="icon is-medium is-left">
-                      <i className="fa fa-search"></i>
-                    </span>
-                  </div>
-              </div>
-            </div>
-      
-            <div className="navbar-end">
-              <div className="navbar-item">
-                <div className="field is-grouped">
-                  <p className="control">
-                    <span className="icon">
-                      <i className="fa fa-bookmark"></i>
-                    </span>
-                  </p>
-                  <p className="control">
-                    <button className="button is-rounded is-warning is-small">{this.state.warning}</button>
-                  </p>
-                  <p className="control">
-                    <button className="button is-transparent ">
-                      <i className="class fa fa-ellipsis-h"></i>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
+        <Navbar logo={this.state.logo} warning={this.state.warning} >
+          <input className="input is-medium" type="text" placeholder="Search" value={this.state.searchText} onChange={(event)=>{this.setState({searchText: event.target.value})}} />
+        </Navbar >
         <div className="columns is-multiline">
           <div className="column is-8">
             <br/>
