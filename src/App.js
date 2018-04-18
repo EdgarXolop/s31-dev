@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
-import Navbar from './components/Navbar'
-import Saved from './components/Saved'
+import Body from './components/dumb/Body'
+import Navbar from './components/dumb/Navbar'
+import InputSeach from './components/dumb/InputSearch'
+import Title from './components/dumb/Title'
+import Content from './components/dumb/Content'
+import Cart from './components/dumb/Cart'
+import Saved from './components/dumb/Saved'
+import Result from'./components/dumb/Result'
 import Domain from'./components/Domain'
 import {available,saved} from './data/data.json'
 import 'bulma/css/bulma.min.css';
@@ -45,16 +51,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container is-paddingless">
+      <Body>
         <Navbar logo={this.state.logo} warning={this.state.warning} >
-          <input className="input is-medium" type="text" placeholder="Search" value={this.state.searchText} onChange={(event)=>{this.setState({searchText: event.target.value})}} />
+          <InputSeach value={this.state.searchText} onChange={(event)=>{this.setState({searchText: event.target.value})}} />
         </Navbar >
-        <div className="columns is-multiline">
-          <div className="column is-8">
-            <br/>
-            <h5 className="title is-5">{this.state.msg}</h5>
-          </div>
-          <div className="column is-8">
+        <Content>
+          <Title text={this.state.msg}/>
+          <Result>
             {
               this.state.available.map((d,$index)=>{
                 if(d.name.trim().indexOf(this.state.searchText.trim()) !== -1){
@@ -64,28 +67,16 @@ class App extends Component {
                 }
               })
             }
-          </div>
-          <div className="column is-4 columns saved-main">
-            <div className="column is-12 saved">
-                <div className="column is-5">
-                    <h2 className="subtitle subtitle-saved">{this.state.titleList}</h2>
-                    <div className="line"></div>
-                </div>
-                <div className="column is-12 ">
-                    <aside className="menu">
-                        <ul className="menu-list">
-                          {
-                            this.state.saved.map((domain,$index)=>{
-                              return <Saved buyback={this.buyback} index={$index} domain={domain} key={domain.name}/>
-                            })
-                          }
-                        </ul>
-                    </aside>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          </Result>
+          <Cart titleList={this.state.titleList}>
+            {
+              this.state.saved.map((domain,$index)=>{
+                return <Saved buyback={this.buyback} index={$index} domain={domain} key={domain.name}/>
+              })
+            }
+          </Cart>
+        </Content>
+      </Body>
     );
   }
 }
