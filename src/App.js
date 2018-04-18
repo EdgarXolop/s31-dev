@@ -5,7 +5,6 @@ import {available,saved} from './data/data.json'
 import 'bulma/css/bulma.min.css';
 import './styles/App.css'
 import './styles/Navbar.css'
-import "./styles/Saved.css";
 
 class App extends Component {
   

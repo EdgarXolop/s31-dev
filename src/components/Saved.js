@@ -1,25 +1,24 @@
-import React, {PureComponent} from 'react'
+import React from 'react'
 import PropTypes from"prop-types";
+import "../styles/Saved.css";
 
-class Saved extends PureComponent {
+function Saved (props){
     
-    render(){
-        return (
-            <li >
-                <a>
-                    <button className="icon is-small" onClick={()=>{this.props.buyback(this.props.index)}}> 
-                        <i className="fa fa-close"></i>
-                        &nbsp;&nbsp;| 
-                    </button>
-                    &nbsp;&nbsp;{this.props.domain.name}
-                    &nbsp;&nbsp;                              
-                    <button className="button is-rounded is-small cart"> 
-                        <i className="fa fa-shopping-cart"></i>
-                    </button>                     
-                </a>
-            </li>
-        )
-    }
+    return (
+        <li >
+            <a>
+                <button className="icon is-small" onClick={()=>{props.buyback(props.index)}}> 
+                    <i className="fa fa-close"></i>
+                    &nbsp;&nbsp;| 
+                </button>
+                &nbsp;&nbsp;{props.domain.name}
+                &nbsp;&nbsp;                              
+                <button className="button is-rounded is-small cart"> 
+                    <i className="fa fa-shopping-cart"></i>
+                </button>                     
+            </a>
+        </li>
+    )
 }
 
 Saved.propTypes = {
