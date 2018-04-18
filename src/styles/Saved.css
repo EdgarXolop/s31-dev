@@ -19,6 +19,10 @@
     background: transparent;
     border: 0px
 }
+.menu-list li a {
+    background: transparent ;
+    border-radius: 20px;
+}
 .menu-list li a:hover {
     background: #595959 ;
     border-radius: 20px;
@@ -26,8 +30,10 @@
 .menu-list li a:hover .icon{
     color: #373737;
 }
+.menu-list li a .cart{
+    float: right;
+}
 .menu-list li a:hover .cart{
     background: #77b2ae;
     color: #000000;
-    float: right;
 }
