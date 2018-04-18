@@ -17,16 +17,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container is-paddingless">
+      <div className="container ">
         <Navbar text="searchTxt" logo={this.state.logo} warning={this.state.warning} />
-        <div className="columns">
-          <div className="column is-12">
+        <div className="columns is-paddingless">
+          <div className="column is-8">
             <br/>
             <h5 className="title is-5">{this.state.msg}</h5>
-          </div>
-        </div>
-        <div className="columns">
-          <div className="column is-8">
           {
             available.map((d)=>{
               return <Domain domain={d} key={d.name}/>
