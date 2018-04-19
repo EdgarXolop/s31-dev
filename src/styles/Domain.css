@@ -5,6 +5,35 @@
 .domain{
     font-size: 24px;
 }
+
+.domain .at{
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 0px;
+    color: #5b7a7f;
+    font-family: sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.domain .namecheap{
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 0px;
+    color: #2c5855;
+    font-family: sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.domain .price{
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 0px;
+    color: #14312e;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0px !important;
+    margin: 0px !important;
+}
 .domain:hover{
     background: #94bcc2;
 }
@@ -12,15 +41,19 @@
     color: #14312e;
 }
 .domain-dot{
-    color: #1eb399;
+    color: #1eb399 !important;
 }
 .domain:hover .domain-dot i{
     color: #07766a;
 }
 .unavailable{
-  color: #d43832;
+  color: #d43832 !important;
 }
 .disabled{
   color: #937d7d;
   text-decoration-line: line-through;  
+}
+
+.div-price{
+    line-height: 10px !important;
 }

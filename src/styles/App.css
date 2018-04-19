@@ -1,3 +1,18 @@
 .saved-main{
-    margin: 0px;
+    padding-right: 0px;
+}
+.saved{
+    background: #101010;
+    margin-top: -58px;
+}
+.subtitle-saved{
+    color: #4baaa0 !important;
+}
+.line{
+    width: 380px;
+    border-bottom: 5px solid #232323;
+    position: absolute;
+}
+.menu-list{
+    font-size: 18px
 }

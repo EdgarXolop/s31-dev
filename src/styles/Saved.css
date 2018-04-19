@@ -1,22 +1,11 @@
-.saved{
-    background: #101010;
-}
-.subtitle-saved{
-    color: #4baaa0 !important;
-}
-.line{
-    width: 380px;
-    border-bottom: 5px solid #232323;
-    position: absolute;
-}
-.menu-list{
-    font-size: 18px
-}
-
 .menu-list li a .icon,.menu-list li a .cart{
     color: #101010;
     background: transparent;
     border: 0px
+}
+.menu-list li a {
+    background: transparent ;
+    border-radius: 20px;
 }
 .menu-list li a:hover {
     background: #595959 ;
@@ -25,8 +14,10 @@
 .menu-list li a:hover .icon{
     color: #373737;
 }
+.menu-list li a .cart{
+    float: right;
+}
 .menu-list li a:hover .cart{
     background: #77b2ae;
     color: #000000;
-    float: right;
 }

@@ -35,11 +35,17 @@ class Domain extends Component {
                 <div className={(this.state.domain.available? null:"disabled") + ' column is-7 domain-txt'} >
                     {this.state.domain.name}
                 </div>
-                <div className="column is-2">
-                    {this.state.domain.currency} {this.state.domain.price}
+                <div className="column is-2 div-price">
+                    <div><label class="price">{this.state.domain.currency}{this.state.domain.price}  </label>  </div>                  
+                    <div>
+                        <label class="at">AT </label>
+                        <label class="namecheap">NAMECHAEAP</label> 
+                    </div> 
                 </div>
                 <div className="column is-1">
-                    <button className="button is-rounded btn-buy" disabled={!this.state.domain.available} click="buy(index)">
+                    <button className="button is-rounded btn-buy" disabled={!this.state.domain.available} onClick={()=>{
+                        this.props.buy(this.props.index)
+                    }}>
                         Buy now &nbsp;&nbsp;
                         <i className="fa fa-angle-right"></i>
                     </button>

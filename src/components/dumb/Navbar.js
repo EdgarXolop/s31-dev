@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import "../styles/Navbar.css"
 
-class Navbar extends Component {
-  state = {
-    logo : this.props.logo,
-    warning: this.props.warning
-  }
+function Navbar (props) {
+  const {
+    logo ,
+    warning
+  } = props
   
-  render() {
     return (
       <div name="navbar">
         <nav className="navbar is-dark navbar-s31">
           <div className="navbar-brand">
             <a className="navbar-item">          
-              <img src={this.state.logo} width="28" height="50" alt="logo-s31"/>          
+              <img src={logo} width="28" height="50" alt="logo-s31"/>          
             </a>
           </div>
           <div className="navbar-item is-expanded">
             <div className="field">
                 <div className="control has-icons-left ">
-                  <input className="input is-medium" type="text" placeholder="Search"/>
+                  {props.children}
                   <span className="icon is-medium is-left">
                     <i className="fa fa-search"></i>
                   </span>
@@ -37,7 +35,7 @@ class Navbar extends Component {
                   </span>
                 </p>
                 <p className="control">
-                  <button className="button is-rounded is-warning is-small">{this.state.warning}</button>
+                  <button className="button is-rounded is-warning is-small">{warning}</button>
                 </p>
                 <p className="control">
                   <button className="button is-transparent ">
@@ -49,8 +47,7 @@ class Navbar extends Component {
           </div>
         </nav>
       </div>
-    );
-  }
+    )
 }
 
 Navbar.propTypes = { 
