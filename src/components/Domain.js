@@ -37,10 +37,10 @@ class Domain extends Component {
                     {this.state.domain.name}
                 </div>
                 <div className="column is-2 div-price">
-                    <div><label class="price">{this.state.domain.currency}{this.state.domain.price}  </label>  </div>                  
+                    <div><label className="price">{this.state.domain.currency}{this.state.domain.price}  </label>  </div>                  
                     <div>
-                        <label class="at">AT </label>
-                        <label class="namecheap">NAMECHAEAP</label> 
+                        <label className="at">AT </label>
+                        <label className="namecheap">NAMECHAEAP</label> 
                     </div> 
                 </div>
                 <div className="column is-2">

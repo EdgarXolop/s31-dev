@@ -1,5 +1,12 @@
 .saved-main{
     padding-right: 0px;
+    z-index: 1;
+}
+.saved-main .triangle{
+    position: absolute;
+    height: 25px;
+    margin-top: -80px;
+    margin-left: 310px;
 }
 .saved{
     background: #101010;

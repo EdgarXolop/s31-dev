@@ -31,7 +31,7 @@ function Navbar (props) {
               <div className="field is-grouped">
                 <p className="control">
                   <span className="icon">
-                    <i className="fa fa-bookmark"></i>
+                    <i className="fa fa-lg fa-bookmark-o"></i>
                   </span>
                 </p>
                 <p className="control">

@@ -4,6 +4,7 @@
 .navbar-s31{
   background: linear-gradient(to right, #df3f28, #89a9bb);
   border: none;
+  z-index: 0 !important;
 }
 input[type="text"] {
   background: transparent;
@@ -18,4 +19,8 @@ input[type="text"] {
   background: transparent !important;
   border: none !important;
   color: #ffffff !important;
+}
+
+body{
+  z-index: 0 !important;
 }
