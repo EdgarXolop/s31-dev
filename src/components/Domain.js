@@ -9,7 +9,8 @@ class Domain extends Component {
         domain : this.props.domain,
         dot:"fa fa-circle",
         bookmark:"fa fa-bookmark",
-        selected: "fa fa-circle"
+        selected: "fa fa-circle",
+        namecheapLogo: "assets/namecheap-icon.png"
     }
 
     over=()=>{
@@ -32,7 +33,7 @@ class Domain extends Component {
                         {!this.state.domain.available?<i className={this.state.dot} ></i>:null}
                     </span>
                 </div>
-                <div className={(this.state.domain.available? null:"disabled") + ' column is-7 domain-txt'} >
+                <div className={(this.state.domain.available? null:"disabled") + ' column is-6 domain-txt'} >
                     {this.state.domain.name}
                 </div>
                 <div className="column is-2 div-price">
@@ -42,10 +43,11 @@ class Domain extends Component {
                         <label class="namecheap">NAMECHAEAP</label> 
                     </div> 
                 </div>
-                <div className="column is-1">
-                    <button className="button is-rounded btn-buy" disabled={!this.state.domain.available} onClick={()=>{
-                        this.props.buy(this.props.index)
-                    }}>
+                <div className="column is-2">
+                    <button className="button is-medium is-rounded btn-buy" disabled={!this.state.domain.available} onClick={()=>{this.props.buy(this.props.index)}}>
+                        &nbsp;
+                        <img src={this.state.namecheapLogo} width="20px"/>
+                        &nbsp;
                         Buy now &nbsp;&nbsp;
                         <i className="fa fa-angle-right"></i>
                     </button>

@@ -30,7 +30,6 @@
     line-height: 0px;
     color: #14312e;
     font-family: sans-serif;
-    font-weight: bold;
     padding: 0px !important;
     margin: 0px !important;
 }
@@ -55,5 +54,6 @@
 }
 
 .div-price{
-    line-height: 10px !important;
+    line-height: 18px !important;
+    font-weight: bold;
 }
